@@ -1,0 +1,150 @@
+@use '../../Common_css/variables' as *;
+@use '../../Common_css/mixin' as *;
+
+.company {
+    height: 682px;
+
+    h2 {
+        left: -7px;
+    }
+
+    &__container {
+        max-width: 1080px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    &__img {
+        width: 560px;
+        height: auto;
+    }
+
+    &__content {
+        width: 480px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    &__text {
+        width: 100%;
+        height: auto;
+        gap: 24px;
+        line-height: 175%;
+    }
+
+    &__link {
+        height: 42px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    &__button {
+        width: 220px;
+        height: 42px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--color-Gray);
+        background-color: white;
+        transition: background-color 0.3s ease-out;
+
+        * {
+            background-color: #00000000;
+        }
+
+        &--text {
+            width: 72px;
+            height: 22px;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 18px;
+            transition: color 0.3s ease-out;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        &--arrow {
+            right: 15px;
+            transition: border-color 0.3s ease-out;
+            @include arrow(var(--color-Gray));
+        }
+
+        &:hover {
+            background-color: var(--color-Gray);
+
+            .company__button {
+                &--text {
+                    color: white;
+                }
+
+                &--arrow {
+                    @include arrow(white);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $BreakPoint__PC) {
+    .company {
+        &__container {
+            gap: 24px;
+        }
+
+        &__img {
+            width: calc(50% - 12px);
+            object-fit: contain;
+            object-position: left top;
+        }
+
+        &__content {
+            width: calc(50% - 12px);
+        }
+    }
+}
+
+@media (max-width: $BreakPoint__SP) {
+    .company {
+        height: 895px;
+
+        &__container {
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &__content {
+            width: 100%;
+            align-items: center;
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__link {
+            height: 108px;
+            width: 220px;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+    }
+}

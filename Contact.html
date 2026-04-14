@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Contact_css/css/style.css">
+    <script src="js/common.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"></div>
+            <nav class="menu">
+                <a class="menu__item" href="Company.html">会社概要</a>
+                <a class="menu__item" href="Access.html">アクセス</a>
+                <a class="menu__item menu__item--contact" href="Contact.html">お問い合わせ</a>
+            </nav>
+            <button type="button" class="hamburger-button">
+                <span class="hamburger-button__bar"></span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <main-visual>
+            <div class="container"><h1>お問い合わせ</h1></div>
+            <img src="image/Contact_Main.jpg" alt="" width="2880" height="744">
+        </main-visual>
+        <section>
+            <div class="container">
+                <div class="text">
+                    <h2>お問い合わせ・ご相談はこちらのフォームから</h2>
+                </div>
+            
+                <form action="" method="post">
+                    <div class="item">
+                        <label for="fullname" class="item__label">お名前<span>必須</span></label>
+                        <input type="text" id="fullname" name="fullname" placeholder="例）山田 太郎" required>
+                    </div>
+                    <div class="item">
+                        <label for="nameOfCompany" class="item__label">企業名</label>
+                        <input type="text" id="nameOfCompany" name="nameOfCompany" placeholder="例）株式会社REISEHOME">
+                    </div>
+                    <div class="item">
+                        <label for="email" class="item__label">メールアドレス<span>必須</span></label>
+                        <input type="email" id="email" name="email" placeholder="例）example@mail.com" required>
+                    </div>
+                    <div class="item">
+                        <div class="item__label">お問い合わせ種別（選択してください）<span>必須</span></div>
+                        <div class="type__options">
+                            <div class="type__options--container">
+                                <div class="type__options--option"><input type="radio" id="question" name="type" value="question" required><label for="question">ご質問</label></div>
+                                <div class="type__options--option"><input type="radio" id="request" name="type" value="request" required><label for="request">ご要望</label></div>
+                            </div>
+                            <div class="type__options--container">
+                                <div class="type__options--option"><input type="radio" id="estimate" name="type" value="estimate" required><label for="estimate">お見積もり</label></div>
+                                <div class="type__options--option"><input type="radio" id="others" name="type" value="others" required><label for="others">その他</label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <label for="content" class="item__label">お問い合わせ内容<span>必須</span></label>
+                        <textarea id="content" name="content" placeholder="内容を入力してください。" required></textarea>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" id="consent" name="consent">
+                        <label for="consent">利用規約・プライバシーポリシーに同意する</label>
+                    </div>
+                    <button type="button" class="form__button">
+                        <span class="form__button--label">送信する</span>
+                        <span class="form__button--arrow"></span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__container">
+                <div class="logo"></div>
+                <div class="footer__link">
+                    <a class="footer__link--insite" href="Company.html">会社紹介</a>
+                    <a class="footer__link--insite" href="Access.html">アクセス</a>
+                    <a class="footer__link--insite" href="Contact.html">お問い合わせ</a>
+                    <div class="footer__link--outsite">
+                        <img src="image/akar-icons_x-fill.png" alt="" width="56" height="56">
+                        <img src="image/streamline_instagram-solid.png" alt="" width="56" height="56">
+                        <img src="image/mdi_youtube.png" alt="" width="56" height="56">
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right">©2023RAISE HOME</div>
+        </div>
+    </footer>
+</body>
+</html>

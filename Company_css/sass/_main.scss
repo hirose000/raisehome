@@ -1,0 +1,222 @@
+@use '../../Common_css/variables' as *;
+
+main-visual {
+    height: 372px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 32px;
+
+    .container {
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0px 32px;
+    }
+
+    h1 {
+        box-sizing: content-box;
+        width: 144px;
+        height: 53px;
+        z-index: 1;
+        padding: 10px 40px 13px 40px;
+        font-size: 36px;
+        font-style: Bold;
+        font-weight: 700;
+        border: white solid 1px;
+        background-color: rgba(#ffffff, 70%);
+    }
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: $BreakPoint__SP) {
+    main-visual {
+        padding: 0px;
+
+        .container {
+            margin: 0px;
+        }
+    }
+}
+
+h2 {
+    width: auto;
+    height: 47px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 32px;
+    font-style: Medium;
+    font-weight: 500;
+    color: var(--color-Gray);
+}
+
+section {
+    margin: 120px 0;
+}
+
+@media (max-width:$BreakPoint__SP) {
+    section{
+        margin: 56px 0;
+    }
+}
+
+.container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+@media (max-width:$BreakPoint__SP) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.philosophy {
+    &__content {
+        width: calc(50% - 20px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 24px;
+
+        &--text {
+            width: 100%;
+            height: /*168px*/ auto;
+            line-height: 175%;
+        }
+    }
+
+    img {
+        width: calc(50% - 20px);
+        height: auto;
+    }
+}
+
+@media (max-width: $BreakPoint__SP) {
+    .philosophy {
+        &__content {
+            width: 100%;
+
+            /*&--text {
+                height: 252px;
+            }*/
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.history {
+    &__content {
+        width: calc(50% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+
+        &--text {
+            width: 100%;
+            height: /*168px*/ auto;
+            line-height: 175%;
+        }
+    }
+
+    img {
+        width: calc(50% - 20px);
+        height: auto;
+    }
+}
+
+@media (max-width: $BreakPoint__SP) {
+    .history {
+        &__content {
+            width: 100%;
+
+            /*&--text {
+                height: 252px;
+            }*/
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.profile {
+    table {
+        width: 720px;
+        border-top: 1px solid var(--color-Gray);
+    }
+
+    th {
+        box-sizing: border-box;
+        height: 64px;
+        border-bottom: 1px solid var(--color-Gray);
+        
+        &:nth-child(1) {
+            width: 160px;
+            background-color: var(--color-LightBeige);
+        }
+
+        &:nth-child(2) {
+            padding-left: 40px;
+            text-align: start;
+        }
+    }
+}
+
+@media (max-width:$BreakPoint__PC) {
+    .profile {
+        table {
+            width: 595px;
+        }
+
+        th {
+            &:nth-child(2) {
+                padding-left: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: $BreakPoint__SP) {
+    .profile {
+        table {
+            width: 100%;
+            height: 780px;
+        }
+
+        tr {
+            width: 100%;
+            height: 128px;
+            display: flex;
+            flex-direction: column;    
+        }
+
+        th {
+            height: 64px;
+            line-height: 64px;
+
+            &:nth-child(1) {
+                width: 100%;
+            }
+
+            &:nth-child(2) {
+                width: 100%;
+                text-align: center;
+                padding-left: 0px;
+            }
+        }
+    }
+}

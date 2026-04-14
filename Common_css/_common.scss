@@ -1,0 +1,98 @@
+@use 'variables' as *;
+
+*,::before,::after {
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+    font-style: Regular;
+    font-weight: 400;
+    font-size: 16px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    color: var(--color-Gray);
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 32px;
+}
+
+@media (max-width: $BreakPoint__SP) {
+    section {
+        padding: 0px;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00000000;
+}
+
+@media (max-width:$BreakPoint__SP) {
+    .container {
+        width: calc(100% - 40px);
+        gap: 40px;
+    }
+}
+
+h2 {
+    height: 155px;
+    position: relative;
+    font-family: 'Gruppo', serif;
+    font-size: 160px;
+    letter-spacing: 0%;
+    color: var(--color-BlueGray);
+    align-self: flex-start;
+}
+
+@media (max-width: $BreakPoint__SP) {
+    h2 {
+        height: 62px;
+        font-size: 64px;
+        position: static;
+    }
+}
+
+h3 {
+        height: 56px;
+        margin: 0 auto;
+        font-size: 32px;
+        font-weight: 500;
+        font-style: Medium;
+    }
+
+@media (max-width: $BreakPoint__SP) {
+    h3 {
+        height: auto;
+        line-height: 150%;
+        font-size: 28px;
+    }
+}
+
+.logo {
+    -webkit-mask-image: url(/image/Logo.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-image: url(/image/Logo.svg);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    background-color: currentColor;
+}

@@ -1,0 +1,100 @@
+@use '../../Common_css/variables' as *;
+@use '../../Common_css/mixin' as *;
+
+.contact {
+    height: 631px;
+    background-image: url(/image/Contact.png);
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h2 {
+        left: -6px;
+        color: var(--color-LightGray);
+        background-color: #00000000;
+    }
+
+    h3 {
+        width: 376px;
+        height: 53px;
+        font-size: 36px;
+        font-weight: 700;
+        font-style: Bold;
+        letter-spacing: 15%;
+    }
+
+    &__content {
+        width: 600px;
+        height: 284px;
+        padding: 48px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(#FFFFFF, 70%);
+        border: 1px solid white;
+    }
+
+    &__content * {
+        background-color: #00000000;
+        gap: 32px;
+    }
+
+    &__text {
+        width: 448px;
+        height: 24px;
+        text-align: center;
+    }
+    
+    &__button {
+        width: 220px;
+        height: 47px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-Gray);
+        border: 0;
+        transition: background-color 0.3s ease-out;
+
+        &--text {
+            width: 108px;
+            height: 27px;
+            color: white;
+            font-size: 18px;
+        }
+
+        &--arrow {
+            right: 15px;
+            @include arrow (white);
+        }
+
+        &:hover {
+            background-color: var(--color-Orange);
+        }
+    }
+}
+
+@media (max-width:$BreakPoint__SP) {
+    .contact {
+        background-image: url(/image/Contact_2.png);
+
+        h3 {
+            width: 184px;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        &__content {
+            width: 335px;
+            height: 349px;
+            gap: 32px;
+        }
+
+        &__text {
+            width: 303px;
+        }
+    }
+}

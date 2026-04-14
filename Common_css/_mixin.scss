@@ -1,0 +1,22 @@
+@forward 'variables';
+
+@mixin arrow ($color) {
+    /*親要素にposition指定が必要*/
+    width: 17px;
+    height: 4.53px;
+    position: absolute;
+    border-bottom: 1px solid $color;
+    overflow: hidden;
+    background-color: #00000000;
+
+    &::before {
+        width: 17px;
+        height: 4.53px;
+        position: absolute;
+        content: " ";
+        background-color: #00000000;
+        border-bottom: 1px solid $color;
+        transform-origin: bottom right;
+        transform: rotate(45deg);
+    }
+}

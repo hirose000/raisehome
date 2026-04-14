@@ -1,0 +1,15 @@
+@use '../../Common_css/variables';
+@use '../../Common_css/mixin';
+@use '../../Common_css/common';
+@use '../../Common_css/header';
+@use 'main-visual';
+@use 'service';
+@use 'works';
+@use 'company';
+@use 'contact';
+@use '../../Common_css/footer';
+
+body {
+    overflow-x: clip;
+    overflow-y: scroll;
+}

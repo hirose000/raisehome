@@ -1,0 +1,15 @@
+@use 'common_scss/variables';
+@use 'common_scss/mixin';
+@use 'common_scss/common';
+@use 'common_scss/header';
+@use 'index_scss/main-visual';
+@use 'index_scss/service';
+@use 'index_scss/works';
+@use 'index_scss/company';
+@use 'index_scss/contact';
+@use 'common_scss/footer';
+
+body {
+    overflow-x: clip;
+    overflow-y: scroll;
+}

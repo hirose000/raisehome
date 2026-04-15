@@ -1,4 +1,8 @@
-@use '../../Common_css/variables' as *;
+@use 'common_scss/variables' as *;
+@use 'common_scss/mixin' as *;
+@use 'common_scss/common';
+@use 'common_scss/header';
+@use 'common_scss/footer';
 
 main-visual {
     height: 372px;

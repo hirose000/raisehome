@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Contact_css/css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <script src="js/common.js" defer></script>
 </head>
 <body>
@@ -38,15 +38,15 @@
                 <form action="" method="post">
                     <div class="item">
                         <label for="fullname" class="item__label">お名前<span>必須</span></label>
-                        <input type="text" id="fullname" name="fullname" placeholder="例）山田 太郎" required>
+                        <input type="text" id="fullname" name="fullname" placeholder="例）山田 太郎" class="item__frame" required>
                     </div>
                     <div class="item">
                         <label for="nameOfCompany" class="item__label">企業名</label>
-                        <input type="text" id="nameOfCompany" name="nameOfCompany" placeholder="例）株式会社REISEHOME">
+                        <input type="text" id="nameOfCompany" name="nameOfCompany" placeholder="例）株式会社REISEHOME" class="item__frame">
                     </div>
                     <div class="item">
                         <label for="email" class="item__label">メールアドレス<span>必須</span></label>
-                        <input type="email" id="email" name="email" placeholder="例）example@mail.com" required>
+                        <input type="email" id="email" name="email" placeholder="例）example@mail.com" class="item__frame" required>
                     </div>
                     <div class="item">
                         <div class="item__label">お問い合わせ種別（選択してください）<span>必須</span></div>
@@ -63,7 +63,7 @@
                     </div>
                     <div class="item">
                         <label for="content" class="item__label">お問い合わせ内容<span>必須</span></label>
-                        <textarea id="content" name="content" placeholder="内容を入力してください。" required></textarea>
+                        <textarea id="content" name="content" placeholder="内容を入力してください。" class="item__frame" required></textarea>
                     </div>
                     <div class="item">
                         <input type="checkbox" id="consent" name="consent">

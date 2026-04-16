@@ -91,10 +91,10 @@ h3 {
   }
 }
 .logo {
-  -webkit-mask-image: url(/image/Logo.svg);
+  -webkit-mask-image: url(/image/logo.svg);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
-  mask-image: url(/image/Logo.svg);
+  mask-image: url(/image/logo.svg);
   mask-repeat: no-repeat;
   mask-size: cover;
   background-color: currentColor;

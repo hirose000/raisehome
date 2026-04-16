@@ -92,10 +92,10 @@ h3 {
   }
 }
 .logo {
-  -webkit-mask-image: url(/image/Logo.svg);
+  -webkit-mask-image: url(/image/logo.svg);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
-  mask-image: url(/image/Logo.svg);
+  mask-image: url(/image/logo.svg);
   mask-repeat: no-repeat;
   mask-size: cover;
   background-color: currentColor;
@@ -248,15 +248,6 @@ header .menu__item--contact:hover * {
     opacity: 0;
   }
 }
-:root {
-  --color-Gray: #55504A;
-  --color-BlueGray: #D5DDED;
-  --color-LightGray: #A09A93;
-  --color-LightBeige: #E7E3DF;
-  --color-Orange: #F7B000;
-  --color-Red: #C54A49;
-}
-
 main-visual {
   box-sizing: content-box;
   width: 100%;

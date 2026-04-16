@@ -32,7 +32,7 @@ function activateWorksSwiper() {
 });};}
 
 function switchByWidth() {
-  if (window.matchMedia('(max-width: 767px)').matches) {
+  if (window.matchMedia('(max-width: 810px)').matches) {
     activateWorksSwiper();
   }
   else {

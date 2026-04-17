@@ -4,7 +4,7 @@ header {
     width: 100%;
     height: 64px;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     background-color: rgba(#FFFFFF, 70%);
 
     * {
@@ -19,7 +19,8 @@ header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        overflow: clip;
+        overflow-x: clip;
+        overflow-y: visible;
     }
     .logo {
         width: 254.07px;
@@ -37,7 +38,7 @@ header {
         &__item {
             width: 104px;
             padding: 19px 20px;
-            z-index: 1;
+            z-index: 2;
             transition: background-color 0.3s ease-out;
 
             &:hover {
@@ -129,7 +130,7 @@ header {
             align-items: center;
             width: 252px;
             height: 100vh;
-            position: absolute;
+            position: fixed;
             top: 0px;
             right: -252px;
             padding-top: 99px;
@@ -149,9 +150,12 @@ header {
 
     .hamburger-button {
         display: flex;
-        z-index: 2;
+        z-index: 3;
 
         &.active {
+            position: fixed;
+            top: 0px;
+            right: 0px;
             &::before {
                 transform: rotate(atan2(3, 4)) scale(1.25, 1);
             }
